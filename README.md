@@ -5,7 +5,7 @@ CoinXP is a comprehensive and responsive cryptocurrency tracking application tha
 A demo video of the application's functionality is available in the coinXP Demo Video folder within the public directory.
 
 ## Features
-* **Real-Time Dashboard: **View a live list of top cryptocurrencies with key metrics like price, 24-hour change, and market capitalization.
+* **Real-Time Dashboard:** View a live list of top cryptocurrencies with key metrics like price, 24-hour change, and market capitalization.
 
 * **Dynamic Search: **Easily find a specific cryptocurrency by typing its name or symbol into the search bar.
 
