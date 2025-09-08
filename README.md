@@ -24,4 +24,4 @@ A demo video of the application's functionality is available in the coinXP Demo 
 
 * **Styling:** Tailwind CSS
 
-API: CoinGecko API (for comprehensive cryptocurrency data)
+* **API:** CoinGecko API (for comprehensive cryptocurrency data)
