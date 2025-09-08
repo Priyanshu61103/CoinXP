@@ -40,7 +40,7 @@ const DataTable = () => {
 
         <div className="min-h-200 flex justify-center mb-20 text-xs md:text-lg">
           <div className={mode==="light"?"text-white":"text-black"}>
-            {arr.map((data) => (
+            {arr != [] && arr.map((data) => (
               <div
                 key={data.market_cap_rank}
                 className={mode === "light"?"h-15 md:h-20 w-90 md:w-220 flex justify-around items-center  border-4 border-t-0 border-orange-600 bg-black":"h-15 md:h-20 w-90 md:w-220 flex justify-around items-center  border-4 border-t-0 border-orange-600 bg-white"}

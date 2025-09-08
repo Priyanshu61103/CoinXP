@@ -116,7 +116,7 @@ const CryptoPage = () => {
                   </h1>
                 </div>
                 <div className="flex justify-center mt-10">
-                  <LineChart historicalData={historicalData} />
+                  {historicalData != [[]] && <LineChart historicalData={historicalData} />}
                 </div>
                 <div>
                   <div className="mt-20">
