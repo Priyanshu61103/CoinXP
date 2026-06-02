@@ -34,6 +34,7 @@ const Hero = () => {
             "x-cg-demo-api-key": `${import.meta.env.VITE_APIKEY}`,
           },
         };
+        console.log(currency.payload);
         data = await fetch(
           `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency.payload}&order=market_cap_desc`,
           options
