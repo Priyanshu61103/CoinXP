@@ -78,7 +78,7 @@ const Hero = () => {
                 ref={inputRef}
                 type="text"
                 placeholder="Search crypto.."
-                className={mode==="light"?"h-10 w-80 md:w-140 rounded-sm bg-black text-white p-4 md:p-7 z-0 ...  focus:outline-0":"h-10 w-80 md:w-140 rounded-sm bg-white text-black p-4 md:p-7 z-0 ...  focus:outline-0"}
+                className={mode==="light"?"h-10 w-84 md:w-144 rounded-sm bg-black text-white p-4 md:p-7 z-0 ...  focus:outline-0":"h-10 w-80 md:w-140 rounded-sm bg-white text-black p-4 md:p-7 z-0 ...  focus:outline-0"}
                 onChange={inputHandler}
                 list="coinlist"
               />
