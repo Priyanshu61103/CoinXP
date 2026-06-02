@@ -144,7 +144,7 @@ const HomePage = () => {
       }}
     >
       <div>
-        <div className="mainDiv z-0">
+        <div className="mainDiv">
           <Navbar />
         </div>
         <div>
