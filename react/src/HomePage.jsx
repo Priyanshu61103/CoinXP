@@ -144,13 +144,13 @@ const HomePage = () => {
       }}
     >
       <div>
-        <div className="mainDiv">
+        <div className="mainDiv relative z-0">
           <Navbar />
         </div>
         <div>
           <SignUp />
         </div>
-        <div className="mainDiv z-0">
+        <div className="mainDiv relative z-0">
           <Hero />
           <DataTable />
         </div>

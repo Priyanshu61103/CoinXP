@@ -74,7 +74,7 @@ const Navbar = () => {
                 ? "h-10 w-10 rounded-full border-2 border-black bg-black  flex justify-center items-center ml-5 mr-5"
                 : "h-10 w-10 rounded-full border-2 border-white bg-white flex justify-center items-center ml-5 mr-5"
             }
-            onClick={() => dispatch(setMode())}
+            onClick={modeHandler}
           >
             <img src="light-mode.png" alt="" className="h-6 w-6" />
           </button>
