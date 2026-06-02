@@ -52,7 +52,7 @@ const SignUp = () => {
                     placeholder="Password"
                     className="h-10 w-70 border-2 border-gray-400  rounded-lg p-2"
                   />
-                  <button className="h-10 w-70 mt-4 bg-orange-600 text-white border-none rounded-lg">
+                  <button className="h-10 w-70 mt-4 bg-orange-600 text-white border-none rounded-lg z-20">
                     Create Account
                   </button>
                   <div className="flex gap-2 mt-2">
@@ -62,7 +62,7 @@ const SignUp = () => {
                     </label>
                   </div>
 
-                  <div className="text-xs flex  m-5 mb-0">
+                  <div className="text-xs flex m-5 mb-0">
                     <p>
                       Already have an account ?{" "}
                       <span
@@ -93,7 +93,7 @@ const SignUp = () => {
                     placeholder="Password"
                     className="h-10 w-70 border-2 border-gray-400 rounded-lg p-2"
                   />
-                  <button className="h-10 w-70 mt-4 bg-orange-600 text-white border-none rounded-lg">
+                  <button className="h-10 w-70 mt-4 bg-orange-600 text-white border-none rounded-lg z-20">
                     Login
                   </button>
                   <div className="flex gap-2 mt-2">
