@@ -7,10 +7,10 @@ import CryptoPage from "./Components/CryptoPage";
 import Footer from "./Components/Footer";
 import SignUp from "./Components/SignUp";
 import { useSelector, useDispatch } from "react-redux";
-import { setMode } from "./Redux/slice/slice";
-import { setCurrency } from "./Redux/slice/slice2";
-import { setCurrencySign } from "./Redux/slice/slice3";
-import { setVisible } from "./Redux/slice/slice4";
+import { setMode } from "./Redux/slice/modeSlice";
+import { setCurrency } from "./Redux/slice/currencySlice";
+import { setCurrencySign } from "./Redux/slice/currencySignSlice";
+import { setVisible } from "./Redux/slice/visibileSlice";
 
 const HomePage = () => {
   const [apiData, setApiData] = useState("");

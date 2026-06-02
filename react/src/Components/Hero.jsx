@@ -2,9 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import { useContext } from "react";
 import { coinContext } from "../context/context";
 import { useSelector , useDispatch } from "react-redux";
-import { setMode } from "../Redux/slice/slice"; 
-import { setCurrency } from "../Redux/slice/slice2";
-import { currencySignSlice, setCurrencySign } from "../Redux/slice/slice3";
+import { setMode } from "../Redux/slice/modeSlice"; 
+import { setCurrency } from "../Redux/slice/currencySlice";
+import { currencySignSlice, setCurrencySign } from "../Redux/slice/currencySignSlice";
 const Hero = () => {
   const obj = useContext(coinContext);
   const currency = useSelector((state) => state.currency.value);

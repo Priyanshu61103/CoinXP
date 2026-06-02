@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import modeReducer from "../slice/slice"
-import currencyReducer from "../slice/slice2"
-import currencySignReducer  from "../slice/slice3"
-import visibleReducer from "../slice/slice4"
+import modeReducer from "../slice/modeSlice"
+import currencyReducer from "../slice/currencySlice"
+import currencySignReducer  from "../slice/currencySignSlice"
+import visibleReducer from "../slice/visibileSlice"
 export const store = configureStore({
   reducer: {
      mode : modeReducer,

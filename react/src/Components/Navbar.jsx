@@ -3,10 +3,10 @@ import { useContext } from "react";
 import { coinContext } from "../context/context";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { setMode } from "../Redux/slice/slice";
-import { setCurrency } from "../Redux/slice/slice2";
-import { setCurrencySign } from "../Redux/slice/slice3";
-import { setVisible } from "../Redux/slice/slice4";
+import { setMode } from "../Redux/slice/modeSlice";
+import { setCurrency } from "../Redux/slice/currencySlice";
+import { setCurrencySign } from "../Redux/slice/currencySignSlice";
+import { setVisible } from "../Redux/slice/visibileSlice";
 const Navbar = () => {
   const obj = useContext(coinContext);
   const mode = useSelector((state) => state.mode.value);

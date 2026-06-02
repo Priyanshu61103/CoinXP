@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { coinContext } from "../context/context";
 import { useSelector, useDispatch } from "react-redux";
-import { setVisible } from "../Redux/slice/slice4";
+import { setVisible } from "../Redux/slice/visibileSlice";
 
 const SignUp = () => {
   const obj = useContext(coinContext);

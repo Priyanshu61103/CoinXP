@@ -3,9 +3,9 @@ import { useContext } from "react";
 import { coinContext } from "../context/context";
 import { Link } from "react-router-dom";
 import { useSelector , useDispatch } from "react-redux";
-import { setMode } from "../Redux/slice/slice"; 
-import { setCurrency } from "../Redux/slice/slice2";
-import { setCurrencySign } from "../Redux/slice/slice3";
+import { setMode } from "../Redux/slice/modeSlice"; 
+import { setCurrency } from "../Redux/slice/currencySlice";
+import { setCurrencySign } from "../Redux/slice/currencySignSlice";
 import Footer from "./Footer";
 
 const DataTable = () => {

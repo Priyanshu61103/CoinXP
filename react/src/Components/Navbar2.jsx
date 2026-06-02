@@ -5,9 +5,9 @@ import { coinContext2 } from "../context/context2";
 import CryptoPage from "./CryptoPage";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { setMode } from "../Redux/slice/slice";
-import { setCurrency } from "../Redux/slice/slice2";
-import { setCurrencySign } from "../Redux/slice/slice3";
+import { setMode } from "../Redux/slice/modeSlice";
+import { setCurrency } from "../Redux/slice/currencySlice";
+import { setCurrencySign } from "../Redux/slice/currencySignSlice";
 
 const Navbar2 = () => {
   const obj = useContext(coinContext2);
