@@ -13,7 +13,8 @@ const Hero = () => {
   const [SuggestionArr, setSuggestionArr] = useState([]);
   const mode = useSelector((state) => state.mode.value);
   const inputHandler = async (e) => {
-    const arr = obj.apiDataComplete.filter((element) => {
+    let arr= [];
+    arr = obj && obj.apiDataComplete && obj.apiDataComplete.filter((element) => {
       return element.name.toLowerCase().includes(e.target.value.toLowerCase());
     });
     setSuggestionArr(arr);
@@ -82,7 +83,7 @@ const Hero = () => {
               />
 
               <datalist id="coinlist" className="text-white bg-orange-600">
-                {SuggestionArr.map((element) => (
+                {SuggestionArr && SuggestionArr.map((element) => (
                   <option key={element.id} value={element.name} />
                 ))}
               </datalist>
