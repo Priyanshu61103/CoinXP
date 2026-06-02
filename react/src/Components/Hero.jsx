@@ -30,7 +30,7 @@ const Hero = () => {
           method: "GET",
           headers: {
             accept: "application/json",
-            "x-cg-demo-api-key": "CG-t5peAaz9T1PRfYApjF9eNJ2D",
+            "x-cg-demo-api-key": `${import.meta.env.VITE_APIKEY}`,
           },
         };
         data = await fetch(
