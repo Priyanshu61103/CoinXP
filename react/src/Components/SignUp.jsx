@@ -32,7 +32,7 @@ const SignUp = () => {
             }
           >
             {!login && (
-              <div>
+              <div className="relative lg:left-28 left-0 right-52 lg:right-0">
                 <div className="h-20 w-70 flex justify-center items-center">
                   <h1 className="text-xl font-bold">Sign Up</h1>
                 </div>
