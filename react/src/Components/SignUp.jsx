@@ -10,7 +10,7 @@ const SignUp = () => {
   const mode = useSelector((state) => state.mode.value);
   const visible = useSelector((state) => state.visible.value);
   return (
-    <div className="relative top-5 left-16 md:left-130 z-20...">
+    <div className="relative top-5 left-16 md:left-130 z-50">
       {obj.visible && (
         <div id="signUp" className="h-0 w-80 border-none rounded-lg ">
           <div className="relative left-70 top-10">
