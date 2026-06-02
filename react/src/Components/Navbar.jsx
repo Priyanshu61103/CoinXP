@@ -21,7 +21,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={mode==="light"?"h-25 w-full flex items-center justify-around border-b-4 bg-white border-orange-600":"h-25 w-full flex items-center justify-around border-b-4 bg-black border-orange-600"}>
+    <div className={mode=="light"?"h-25 w-full flex items-center justify-around border-b-4 bg-white border-orange-600":"h-25 w-full flex items-center justify-around border-b-4 bg-black border-orange-600"}>
       <div>
         <Link to="/">
           <div className="flex items-center md:mr-5">

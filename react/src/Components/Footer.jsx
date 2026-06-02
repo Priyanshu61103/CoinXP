@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <footer> 
-        <div className={mode === "light"?"text-black bg-white":"text-white bg-black"}>
+        <div className={mode == "light"?"text-black bg-white":"text-white bg-black"}>
           <div className="flex justify-center mt-2">
             <div className="md:w-300 w-100 h-1 bg-orange-600 "></div>
           </div>

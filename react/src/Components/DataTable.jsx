@@ -15,10 +15,10 @@ const DataTable = () => {
   const currency = useSelector((state)=>state.currency.value);
   const currencySign = useSelector((state)=>state.currencySign.value);
    return (
-      <div className={mode==="light"?"bg-white":"bg-black"}>
+      <div className={mode=="light"?"bg-white":"bg-black"}>
         <div className="h-10 md:h-20 flex justify-center items-center mt-10 md:mt-20">
           <div
-            className={mode==="dark"?"h-10 md:h-20 w-90 md:w-220 flex justify-around items-center rounded-t-2xl text-white bg-orange-500":"h-10 md:h-20 w-90 md:w-220 flex justify-around items-center rounded-t-2xl text-black bg-orange-500"}
+            className={mode=="dark"?"h-10 md:h-20 w-90 md:w-220 flex justify-around items-center rounded-t-2xl text-white bg-orange-500":"h-10 md:h-20 w-90 md:w-220 flex justify-around items-center rounded-t-2xl text-black bg-orange-500"}
           >
             <div className="w-10 flex items-center justify-start text-xs md:text-lg">
               <p>#</p>

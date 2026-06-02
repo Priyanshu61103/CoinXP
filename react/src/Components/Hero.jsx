@@ -58,7 +58,7 @@ const Hero = () => {
   }, [obj.currency]);
 
   return (
-    <div className={mode==="light"?"h-90 w-full flex justify-center bg-white items-center z-0":"h-90 w-full bg-black flex justify-center items-center z-0"}>
+    <div className={mode=="light"?"h-90 w-full flex justify-center bg-white items-center z-0":"h-90 w-full bg-black flex justify-center items-center z-0"}>
         <div>
           <div>
             <div className="flex justify-center items-center mt-30">

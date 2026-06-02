@@ -26,7 +26,7 @@ const SignUp = () => {
 
           <div
             className={
-              mode === "light"
+              mode == "light"
                 ? "h-100 flex content-center gap-5 flex-wrap justify-center p-10 z-80 bg-black text-white border-2 border-white rounded-xl"
                 : "h-100 flex content-center gap-5 flex-wrap justify-center p-10 z-80 bg-white text-black border-2 border-black rounded-xl"
             }

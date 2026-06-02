@@ -124,6 +124,7 @@ const HomePage = () => {
       });
     }
   };
+  console.log(mode);
   return (
     <coinContext.Provider
       value={{
