@@ -10,7 +10,7 @@ const SignUp = () => {
   const mode = useSelector((state) => state.mode.value);
   const visible = useSelector((state) => state.visible.value);
   return (
-    <div className="relative top-5 left-16 md:left-130">
+    <div className="relative top-5 left-16 md:left-130 z-20...">
       {obj.visible && (
         <div id="signUp" className="h-0 w-80 border-none rounded-lg ">
           <div className="relative left-70 top-10">
@@ -27,8 +27,8 @@ const SignUp = () => {
           <div
             className={
               mode === "light"
-                ? "h-100 flex content-center gap-5 flex-wrap justify-center p-10 z-50 bg-black text-white"
-                : "h-100 flex content-center gap-5 flex-wrap justify-center p-10 z-50 bg-white text-black"
+                ? "h-100 flex content-center gap-5 flex-wrap justify-center p-10 z-50 bg-black text-white border-white"
+                : "h-100 flex content-center gap-5 flex-wrap justify-center p-10 z-50 bg-white text-black border-black"
             }
           >
             {!login && (
