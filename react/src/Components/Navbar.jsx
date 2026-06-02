@@ -40,7 +40,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="w-100 flex justify-around text-xl font-bold">
+      {/* <div className="w-100 flex justify-around text-xl font-bold">
         <div
           className={
             mode === "light"
@@ -77,9 +77,9 @@ const Navbar = () => {
         >
           Blog
         </div>
-      </div>
+      </div> */}
 
-      <div className="h-15 w-60 flex justify-around items-center mr-2 md:mr-0">
+      <div className="h-15 w-60 flex justify-center items-center mr-2 md:mr-0">
         <select
           name=""
           id="countryDropdown"
