@@ -45,7 +45,7 @@ const Navbar = () => {
           name=""
           id="countryDropdown"
           className={
-            mode === "dark"
+            mode == "dark"
               ? "text-white h-8 w-15 border-2 border-white rounded-sm"
               : "text-black h-8 w-15 border-2 border-black rounded-sm"
           }
@@ -65,7 +65,7 @@ const Navbar = () => {
         <div>
           <button
             className={
-              mode === "light"
+              mode == "light"
                 ? "h-10 w-10 rounded-full border-2 border-black bg-black  flex justify-center items-center ml-5 mr-5"
                 : "h-10 w-10 rounded-full border-2 border-white bg-white flex justify-center items-center ml-5 mr-5"
             }
