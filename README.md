@@ -12,8 +12,6 @@ Here is its live link : https://coin-xp.vercel.app/
 
 * **Detailed Crypto Pages:** Click on any cryptocurrency to view its dedicated page, complete with a historical price chart and detailed market information.
 
-* **Authentication Flow:** Features a user-friendly modal for both signing up and logging in, showcasing a plan for user management.
-
 * **Interactive UI:** Seamless user experience with a responsive design and visual feedback for loading states.
 ## Technology Stack
 
