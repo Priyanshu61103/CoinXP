@@ -40,45 +40,6 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="w-100 flex justify-around text-xl font-bold">
-        <div
-          className={
-            mode === "light"
-              ? "text-black hidden md:block"
-              : "text-white hidden md:block"
-          }
-        >
-          Home
-        </div>
-        <div
-          className={
-            mode === "light"
-              ? "text-black hidden md:block"
-              : "text-white hidden md:block"
-          }
-        >
-          Features
-        </div>
-        <div
-          className={
-            mode === "light"
-              ? "text-black hidden md:block"
-              : "text-white hidden md:block"
-          }
-        >
-          Pricing
-        </div>
-        <div
-          className={
-            mode === "light"
-              ? "text-black hidden md:block"
-              : "text-white hidden md:block"
-          }
-        >
-          Blog
-        </div>
-      </div>
-
       <div className="h-15 w-60 flex justify-around items-center mr-2 md:mr-0">
         <select
           name=""

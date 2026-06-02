@@ -5,9 +5,9 @@ const LineChart = ({ historicalData }) => {
 const [data, setData] = useState([["Date","Prices"]])
   useEffect(() => {
      const dataCopy = [["Date","Prices"]];
-     historicalData.prices.map((item) => {
+     {historicalData && historicalData.prices && historicalData.prices.map((item) => {
            dataCopy.push([new Date(item[0]).toLocaleDateString(),item[1]]);
-     })
+     })}
      setData(dataCopy);
   }, [historicalData])
   
