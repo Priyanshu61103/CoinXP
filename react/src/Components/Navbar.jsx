@@ -3,10 +3,10 @@ import { useContext } from "react";
 import { coinContext } from "../context/context";
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { setMode } from "../Redux/slice/modeSlice";
-import { setCurrency } from "../Redux/slice/currencySlice";
-import { setCurrencySign } from "../Redux/slice/currencySignSlice";
-import { setVisible } from "../Redux/slice/visibileSlice";
+import { setMode } from "../Redux/slice/slice";
+import { setCurrency } from "../Redux/slice/slice2";
+import { setCurrencySign } from "../Redux/slice/slice3";
+import { setVisible } from "../Redux/slice/slice4";
 const Navbar = () => {
   const obj = useContext(coinContext);
   const mode = useSelector((state) => state.mode.value);
@@ -20,13 +20,8 @@ const Navbar = () => {
     dispatch(setCurrencySign(event.target.value));
   };
 
-  const modeHandler = () => {
-     console.log("yes");
-     dispatch(setMode());
-  }
-
   return (
-    <div className={mode=="light"?"h-25 w-full flex items-center justify-around border-b-4 bg-white border-orange-600":"h-25 w-full flex items-center justify-around border-b-4 bg-black border-orange-600"}>
+    <div className={mode==="light"?"h-25 w-full flex items-center justify-around border-b-4 bg-white border-orange-600":"h-25 w-full flex items-center justify-around border-b-4 bg-black border-orange-600"}>
       <div>
         <Link to="/">
           <div className="flex items-center md:mr-5">
@@ -45,12 +40,51 @@ const Navbar = () => {
         </Link>
       </div>
 
+      <div className="w-100 flex justify-around text-xl font-bold">
+        <div
+          className={
+            mode === "light"
+              ? "text-black hidden md:block"
+              : "text-white hidden md:block"
+          }
+        >
+          Home
+        </div>
+        <div
+          className={
+            mode === "light"
+              ? "text-black hidden md:block"
+              : "text-white hidden md:block"
+          }
+        >
+          Features
+        </div>
+        <div
+          className={
+            mode === "light"
+              ? "text-black hidden md:block"
+              : "text-white hidden md:block"
+          }
+        >
+          Pricing
+        </div>
+        <div
+          className={
+            mode === "light"
+              ? "text-black hidden md:block"
+              : "text-white hidden md:block"
+          }
+        >
+          Blog
+        </div>
+      </div>
+
       <div className="h-15 w-60 flex justify-around items-center mr-2 md:mr-0">
         <select
           name=""
           id="countryDropdown"
           className={
-            mode == "dark"
+            mode === "dark"
               ? "text-white h-8 w-15 border-2 border-white rounded-sm"
               : "text-black h-8 w-15 border-2 border-black rounded-sm"
           }
@@ -70,11 +104,11 @@ const Navbar = () => {
         <div>
           <button
             className={
-              mode == "light"
+              mode === "light"
                 ? "h-10 w-10 rounded-full border-2 border-black bg-black  flex justify-center items-center ml-5 mr-5"
                 : "h-10 w-10 rounded-full border-2 border-white bg-white flex justify-center items-center ml-5 mr-5"
             }
-            onClick={modeHandler}
+            onClick={() => dispatch(setMode())}
           >
             <img src="light-mode.png" alt="" className="h-6 w-6" />
           </button>
