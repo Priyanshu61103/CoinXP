@@ -53,7 +53,6 @@ const CryptoPage = () => {
       }
       const apiData2 = await info.json();
       setHistoricalData(apiData2);
-      //console.log(apiData2);
     };
 
     const DataFetchingFromAPI = async () => {
@@ -83,9 +82,7 @@ const CryptoPage = () => {
     DataFetchingFromAPI();
     fetchDataForChart();
   }, [currency, currencySign ,mode]);
-  // console.log({ id });
   const arr = apiDetail.filter((data) => data.id == obj.id);
-  // console.log(arr);
 
   return (
     <div>

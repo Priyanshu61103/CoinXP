@@ -112,7 +112,6 @@ const HomePage = () => {
   
   const signUpController = () => {
     const fader = document.querySelectorAll(".mainDiv");
-    console.log(visible);
     dispatch(setVisible());
     if (!visible) {
       fader.forEach((element) => {
@@ -124,7 +123,6 @@ const HomePage = () => {
       });
     }
   };
-  console.log(mode);
   return (
     <coinContext.Provider
       value={{
