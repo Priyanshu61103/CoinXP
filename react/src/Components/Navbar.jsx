@@ -28,7 +28,7 @@ const Navbar = () => {
             <img
               src="../coinlogo.png"
               alt=""
-              className="h-8 w-10 md:h-10 md:w-12 ml-2 md:ml-0"
+              className="h-8 w-10 md:h-10 md:w-12"
             />
             <h1 className=" text-xl md:text-2xl text-sans text-orange-600 mr-1">
               Coin
@@ -39,7 +39,6 @@ const Navbar = () => {
           </div>
         </Link>
       </div>
-
 
       <div className="h-15 w-60">
         <select
