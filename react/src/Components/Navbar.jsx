@@ -40,7 +40,10 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="h-15 w-fit flex justify-around items-center mr-2 md:mr-0">
+      <div className="w-100">
+      </div>
+
+      <div className="h-15 w-60 flex justify-around items-center mr-2 md:mr-0">
         <select
           name=""
           id="countryDropdown"
