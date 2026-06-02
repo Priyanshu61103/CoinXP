@@ -39,7 +39,7 @@ const CryptoPage = () => {
           "x-cg-demo-api-key": `${import.meta.env.VITE_APIKEY}`,
         },
       };
-      let info;
+      let info = [];
       if (currency.payload == undefined) {
         info = await fetch(
           `https://api.coingecko.com/api/v3/coins/${obj.id}/market_chart?vs_currency=${currency}&days=${days}`,

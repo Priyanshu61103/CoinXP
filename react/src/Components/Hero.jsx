@@ -23,7 +23,7 @@ const Hero = () => {
   const searchHandler = () => {
     const dataFetchBySearch = async () => {
       obj.setName(inputRef.current.value);
-      let data;
+      let data = [];
       if (obj.name === "") {
         obj.setApiData(obj.apiDataCopy);
       } else {
