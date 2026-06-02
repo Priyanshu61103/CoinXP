@@ -20,6 +20,11 @@ const Navbar = () => {
     dispatch(setCurrencySign(event.target.value));
   };
 
+  const modeHandler = () => {
+     console.log("yes");
+     dispatch(setMode());
+  }
+
   return (
     <div className={mode=="light"?"h-25 w-full flex items-center justify-around border-b-4 bg-white border-orange-600":"h-25 w-full flex items-center justify-around border-b-4 bg-black border-orange-600"}>
       <div>
