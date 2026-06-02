@@ -2,8 +2,7 @@
 ## About the Project
 CoinXP is a comprehensive and responsive cryptocurrency tracking application that provides users with real-time market data. Built with ReactJS and Redux Toolkit, the application offers an intuitive and modern interface for monitoring the world's largest crypto marketplace. It is a robust project that demonstrates strong skills in state management, API integration, and clean UI design.
 
-A demo video of the application's functionality is available in the coinXP Demo Video folder within the public directory.
-
+Here is its live link : https://coin-xp.vercel.app/
 ## Features
 * **Real-Time Dashboard:** View a live list of top cryptocurrencies with key metrics like price, 24-hour change, and market capitalization.
 
