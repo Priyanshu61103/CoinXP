@@ -90,7 +90,7 @@ const Hero = () => {
               </datalist>
 
               <button
-                className="h-10 w-30 rounded-sm bg-orange-600 text-white relative left-115 bottom-12 hidden md:block z-5..."
+                className="h-10 w-30 rounded-sm bg-orange-600 text-white relative left-110 bottom-12 hidden md:block z-5..."
                 onClick={searchHandler}
               >
                 Search
